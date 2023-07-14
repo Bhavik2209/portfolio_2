@@ -10,9 +10,8 @@ body{
     align-items: center;
     box-sizing: border-box;
     background-size: cover;
-    background:#331d2c;
-    overflow-x: hidden;
-    overflow-x: scroll;
+    background:#030118;
+    background-attachment: fixed;
 }
 .header1{
     margin: auto 100px;
@@ -21,17 +20,16 @@ body{
 }
 .logo
 {
-    color:#a78295;
-    
+    color:#5B8FB9;
     font-family: 'Passion One', cursive;
-    font-size: 30px;
+    font-size: 2em;
     background-size: cover;
     font-weight: 5;
     letter-spacing: 2px;
 
 }
 .dot{
-    color:#704d85;
+    color:#B6EADA;
 }
 
 .navigation{
@@ -43,7 +41,7 @@ nav{
     margin: 50px 0px;
 }
 nav a{
-    color:#a78295;
+    color:#5B8FB9;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: 35px;
     text-decoration: none;
@@ -51,17 +49,20 @@ nav a{
     font-size: 22px;
 }
 nav a:hover{
-    color:#3f2e3e;
+    color:#B6EADA;
 }
 nav a:active{
     color:#3f2e3e;
 
 }
 .header{
+    z-index: 0;
+
     max-height: 100vh;
     display: flex;
     align-items: center;    
     justify-content: space-between;
+    margin-top: 50px;
 }
 @media(max-width:735px){
     nav a{
@@ -71,6 +72,9 @@ nav a:active{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .logo{
+        font-size: 1.5em;
     }
 }
 @media(max-width:890px){
@@ -88,9 +92,28 @@ nav a:active{
     .header_content h1{
         font-size:30px;
     }
+    .logo{
+        font-size: 1em;
+    }
+}
+@media(max-width:1169px){
+    .header_content {
+        max-width: 400px;
+    }
+    .header_content p{
+        
+        font-size: 10px;
+    }
+    .header_content h3{
+        font-size: 15px;
+    }
 }
 .header_img{
-    max-width: 45%;
+    background-color: #375f80;
+    border-radius: 50%;
+    filter:brightness(1);
+    z-index: 0;
+    max-width: 38%;
     transition: 2s;
 }
 /* .header_img:hover{
@@ -103,31 +126,33 @@ nav a:active{
 }
 .header_content h1{
     font-family: 'Passion One', cursive;
-    font-size: 56px;
-    color:#a78295;
+    font-size: 3.5em;
+    color:#5B8FB9;
     margin: 0px auto;
 }
 .header_content b{
-    color:#704d85;
+    color:#B6EADA;
 }
 .header_content h3{
+    margin-top: 10px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-    color:#704d85;
+    color:#5B8FB9;
 }
 .header_content p{
     font-family:  Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color:#a78295;
 }
 .header2{
+    z-index: 2;
     display: block;
-    background-color: #a78295;
     max-height: 100vh;
     
 }
 .header2 h1{
+    z-index: 2;
     text-align: center;
-    color:#331d2c;
+    color:#35658b;
     font-family: 'Passion One', cursive;
     font-size: 40px;
 }
