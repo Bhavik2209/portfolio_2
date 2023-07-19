@@ -319,7 +319,7 @@ text-align: center;
     
     /* Specify the animation with the
     duration and speed */
-    animation: slide 15s ease-in-out infinite;
+    animation: slide 20s ease-in-out infinite;
     }
     
     /* Set the background color
@@ -358,4 +358,67 @@ text-align: center;
         margin-left: calc(-828px * 3);
     }
     }
+/* #header 4 */
+.header4{
+    overflow: hidden;
+    z-index: 2;
+    display: block;
+    height: 100vh;
     
+}
+.header4 h1{
+    z-index: 2;
+    text-align: center;
+    color:#35658b;
+    font-family: 'Passion One', cursive;
+    font-size: 40px;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    /* border: 1px solid #ccc; */
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input {
+    background-color: #3b3b3b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input:hover {
+    background-color: #000000;
+  }
+
+  .container {
+
+    border-radius: 5px;
+    background-color: #030118;
+    padding: 10px;
+  }
+ 
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.subject{
+    background-color: #000000;
+}
+  @media screen and (max-width: 600px) {
+    .column, input {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
