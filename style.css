@@ -364,6 +364,7 @@ text-align: center;
     z-index: 2;
     display: block;
     height: 100vh;
+    padding: 3rem 0.5rem 1rem 0.5rem;
     
 }
 .header4 h1{
@@ -391,7 +392,7 @@ input, select, textarea {
   }
   
   input:hover {
-    background-color: #000000;
+    background-color: #464545;
   }
 
   .container {
@@ -422,3 +423,13 @@ input, select, textarea {
       margin-top: 0;
     }
   }
+.submit-button{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+    
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
